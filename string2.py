@@ -85,6 +85,7 @@ def main():
     test(not_bad('This dinner is not that bad!'), 'This dinner is good!')
     test(not_bad('This tea is not hot'), 'This tea is not hot')
     test(not_bad("It's bad yet not"), "It's bad yet not")
+    test(not_bad('He is bad to the bone!'), 'He is bad to the bone!')
 
     print('\nfront_back')
     test(front_back('abcd', 'xy'), 'abxcdy')

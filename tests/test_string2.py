@@ -47,6 +47,12 @@ class TestString2(unittest.TestCase):
         self.assertEqual(
             not_bad("It's bad yet not"), "It's bad yet not"
             )
+        self.assertEqual(
+            not_bad('He is bad to the bone!'), 'He is bad to the bone!'
+        )
+        self.assertEqual(
+            not_bad('I am not feeling well'), 'I am not feeling well'
+        )
 
     def test_front_back(self):
         """Check if front_back function is working"""
